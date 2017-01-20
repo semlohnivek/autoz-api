@@ -65,9 +65,9 @@ function buildCars(makes) {
     car._make = make._id;
     car.model = model;
 
-    car.year = Math.floor(Math.random() * (years[0] - 2005 + 1)) + 2005;
-    car.mileage = Math.floor(Math.random() * (150000 - 30000 + 1)) + 30000;
-    car.price = Math.floor(Math.random() * (25000 - 5000 + 1)) + 5000;
+    car.year = Math.floor(Math.random() * (years[0] - 2005 + 1)) + 2000;
+    car.mileage = Math.floor(Math.random() * (250000 - 30000 + 1)) + 30000;
+    car.price = Math.floor(Math.random() * (100000)) + 5000;
     car.vin = (Math.floor(Math.random() * (900000 - 200000 + 1)) + 200000) + "FKE234MQ32N";
 
     car.description = "This " + car.year + " " + make.displayName + " " + car.model + " is truly one of a kind.  With only " + car.mileage + " miles, there's still plenty of life left in this baby.  Was a non-smoking vehicle that was cared for meticulously throughout its life.  It has bucket seats, backup cam, A/C, heater, steering wheel, gas pedal, windshield, and much more.  Come take a look!";
